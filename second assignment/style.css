@@ -1,0 +1,613 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+button:focus {outline:0;}
+
+
+
+/* MAIN TAGS
+--------------------------------*/
+html{
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5;
+   background-color: #F7F7F7; 
+   font-family: "Vollkorn", serif;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: "Vollkorn";
+}
+
+h6 {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #B8D6FF;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+hr {
+  margin: 20px 0;
+  background-color: #f7f7f7;
+  border: 1px solid white;
+}
+
+h2 {
+  font-size: 33px;
+  line-height: 49px;
+  color: #262626;
+  font-family: "Vollkorn";
+  font-weight: 500;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 630px;
+}
+
+p {
+  width: 1028px;
+  height: 212px;
+  font-size: 25px;
+  line-height: 44px;
+  color: #434343;
+  
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* HELPER CLASSES
+---------------------------------*/
+.max-width {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 32px;
+}
+
+.vollkorn {
+  font-family: 'Vollkorn', serif;
+}
+.josefin {
+  font-family: 'Josein' sans-serif;
+}
+
+
+
+/* LAYOUT
+---------------------------------*/
+.hero-image {
+    background-image: url("assets/wide_fullhd_belgium-brussels.jpg");
+    background-color: lightgray;
+    height: 560px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+
+
+
+.topnav a {
+       float: left;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 20px 20px;
+       text-decoration: none;
+       font-size: 12px;
+       text-transform: uppercase;
+       transition: background 1s ease;
+       font-family: 'Josefin Sans';
+       font-weight: bold;
+   }
+   
+   .topnav a:hover {
+      color:rgb(47, 0, 69);
+  }
+
+
+
+.bottomleft {
+    font-size: 30px;
+    letter-spacing: 9px;
+    color: white;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    margin-left: 50px;
+    
+}
+
+
+.top-btns {
+  margin-top: 50px;
+  margin-left: 65px
+}
+.top-btns button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
+
+
+  .button1, .button2:active  {
+    background-color:  transparent;
+    
+    padding: 5px 10px;
+    text-align: center; 
+    margin: 4px 2px;
+    
+    margin-left: 50px;
+   
+  }
+  
+  .button1:hover {
+    color: black;
+  }
+
+  .button2, .button1:active {
+    background-color: rgb(17, 0, 255); 
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: background .5s ease;
+    color: white;
+  }
+
+
+  .button2:hover {
+    background-color:rgb(47, 0, 69);
+    color:rgb(255, 255, 255);
+  }
+
+.main-text {
+  margin-left: 70px;
+}
+
+
+  .first {
+    color: #959595;
+    font-size: 14px;
+    line-height: 39px; 
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    width: 15rem;
+  }
+
+  .second {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 39px;
+    color: #959595;
+    font-family: "Arial";
+    margin-left: 50px;
+  }
+
+  .third {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 39px;
+    font-family: "Arial";
+    margin-left: 50px;
+
+  }
+  .third a{
+    color: #959595;
+  }
+
+  .container {
+    font-size: 40px;
+    min-height: 200px;
+    width: 50%;
+    background: #f7f7f7;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 30% 20% 50%;
+    margin-left: 50px;
+    max-width: 1200px;
+    
+  }
+
+
+  .flex-container {
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #fff;
+  }
+  .col {
+    padding: 3em 0;
+  }
+  .col1 {
+    width: 30%;
+    text-align: center;
+    font-family: "josefin sans";
+    font-weight: bold;
+    letter-spacing: .1em;
+  }
+
+  .col1 span {
+    display: inline-block;
+    padding: 1em 1em .8em;
+    background: #F7F7F7;
+  }
+
+
+  .col2 {
+    width: 80%;
+    max-width: 600px;
+    line-height: 2em;
+
+  }
+
+
+
+  .resultats-container {
+    background-color:white;
+    margin-left: 2rem;
+    width: 1200px;
+    flex-direction: column;
+    line-height: 25px; 
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resultats-div {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: .1em;
+    
+  }
+
+
+  .resultats-p {
+    max-width: 650px;
+    width: 80%;
+    font-size: 18px;
+    line-height: 2em;
+    color: #434343;
+  
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+  }
+
+  .resultats-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .resultats-boxes div {
+    width: 315px;
+    height: 100px;
+    background: #0865DE;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 30px;
+  }
+
+  .total-resultats {
+    color: #fff;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+
+  }
+  .project-container {
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 190px;
+    margin-left: 132px;
+
+  }
+
+
+  .bruxelles-container {
+    margin-top: 60px;
+    margin-left: 132px;
+    display: flex;
+  }
+
+
+  .bruxelles-container div {
+    width: 303px;
+    margin-right: 30px;
+  }
+
+  .bruxelles-container img {
+    width: 303.33px;
+    height: 259.17px;
+    display: block;
+  }
+
+.discription-div {
+  background-color: #fff;
+  display: block;
+  padding: 30px;
+  height: 170px;
+  width: 300px;
+  box-shadow: 1px 2px 4px #888888;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+
+.discription-div h3 {
+  font-family: 'Josefin Sans';
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.discription-div P {
+  font-family: 'Vollkorn';
+  font-size: 14px;
+  color: #959595;
+  margin: 0px;
+  width: 303.33px;
+  height: auto;
+  line-height:normal;
+
+}
+.discription-div span{
+  font-family: 'Josefin Sans';
+  font-size: 11px;
+  color: #959595;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.discription-div div button{
+  margin-top: 1.6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+ 
+}
+.discription-div div{
+  display: flex;
+}
+
+.discription-div div button img{
+  background-color: transparent;
+}
+
+.discription-div div p {
+  font-family: 'Josefin Sans';
+  font-size: 11px;
+  font-weight: bold;
+  color: #002D69 !important;
+  margin-top: 2.2rem;
+  margin-left: 10px;
+  
+}
+.discription-div p:nth-child(2){
+  color: #262626;
+}
+
+.nos-projets {
+  background-color: #FF7600;
+  height: 48px;
+  width: 176.32px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 530px;
+  flex-direction: row;
+  display: block;
+  cursor: pointer;
+  display: block;
+  
+}
+.nos-projets div{
+  display: flex;
+}
+
+.nos-projets img{
+  height: 14px;
+  width: 20px;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+.nos-projets p{
+  color: white;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-left: 15px;
+  padding-bottom: 15px;
+  height: 0px;
+  width: 0px;
+  opacity: 0.5;
+  
+}
+
+.nos-projets span{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 18px;
+  
+}
+.footer {
+  float: left;
+  width: 230px;
+  height: 422px;
+  background-color: rgb(238, 237, 237);
+  border-right: 2px solid white;
+  margin-top: 250px;
+}
+
+.footer1 {
+  width: 230px;
+  height: 422px;
+  background-color: rgb(238, 237, 237);
+  float: left;
+  border-right: 3px solid white;
+  margin-top: 250px;
+}
+
+
+
+.footer2 {
+  width: 230px;
+  height: 422px;
+  background-color: rgb(238, 237, 237);
+  float: left;
+  border-right: 3px solid white;
+  margin-top: 250px;
+}
+
+
+
+.footer3 {
+  width: 230px;
+  height: 422px;
+  background-color: rgb(238, 237, 237);
+  float: left;
+  border-right: 3px solid white;
+  margin-top: 250px;
+}
+
+.footer4 {
+  width: 300px;
+  height: 422px;
+  background-color: white;
+  float: left;
+  border: 2px solid white;
+  margin-top: 250px;
+  
+}
+
+input[type=text] {
+  width: 160px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+  
+
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.header1 h4 div {
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 12px;
+  
+}
+.number h6 div{
+  font-family: 'Arial';
+  font-size: 11px;
+  color: #959595;
+
+}
